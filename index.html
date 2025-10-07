@@ -686,13 +686,12 @@ footer{
                 hasTrackedConversion = true;
 
                 // Enviar evento CompleteRegistration de Facebook Pixel
-                fbq('track', 'CompleteRegistration', {
-                    value: 1.00,
-                    currency: 'USD',
-                    content_name: 'WhatsApp Contact',
-                    status: true
-                });
-
+fbq('track', 'AddToCart', {
+    value: 0.00,
+    currency: 'USD',
+    content_name: 'WhatsApp Contact',
+    status: true
+});
                 console.log('✅ Evento CompleteRegistration enviado');
                 console.log('📊 Trust Score:', trustScore);
                 console.log('⏰ Timestamp:', new Date().toISOString());
