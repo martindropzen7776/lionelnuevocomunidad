@@ -453,56 +453,6 @@ footer{
             .mini-note{font-size:11px;margin-top:6px;}
         }
         
-        /* Pantallas muy pequeñas */
-        @media (max-width: 360px) {
-            :root{--header-h:260px;}
-            header{height:var(--header-h);padding:6px 0;}
-            .logo-mini{margin-bottom:1px;padding:3px;}
-            .logo-mini img{height:32px;}
-            main{padding:0 10px;padding-top:calc(var(--header-h) + 6px);}
-            .content{min-height:calc(100vh - var(--header-h) - 6px);padding:6px 0 18px 0;}
-            .hero{padding:16px 10px 20px;margin:3px 0 6px 0;}
-            .hero h1{font-size:18px;}
-            .hero p{font-size:11px;}
-            .btn-whatsapp{height:56px;font-size:14px;width:80%;padding:14px 12px;}
-            .btn-whatsapp img{height:20px;width:20px;}
-            .pill-badge{font-size:9px;padding:4px 10px;}
-            .mini-note{font-size:10px;margin-top:5px;}
-        }
-        
-        /* Landscape mode - Pantallas horizontales */
-        @media (max-width: 900px) and (max-height: 600px) and (orientation: landscape) {
-            :root{--header-h:180px;}
-            header{height:var(--header-h);padding:4px 0;}
-            .logo-mini{margin-bottom:3px;padding:2px;}
-            .logo-mini img{height:28px;}
-            main{padding:0 20px;padding-top:calc(var(--header-h) + 5px);}
-            .content{min-height:calc(100vh - var(--header-h) - 5px);padding:5px 0 15px 0;}
-            .hero{padding:12px 16px 15px;margin:2px 0 4px 0;}
-            .hero h1{font-size:16px;}
-            .hero p{font-size:11px;}
-            .btn-whatsapp{height:44px;font-size:13px;width:50%;padding:10px 14px;}
-            .btn-whatsapp img{height:18px;width:18px;}
-            .pill-badge{font-size:8px;padding:3px 6px;}
-            .mini-note{font-size:9px;margin-top:3px;}
-        }
-        
-        /* Tabletas y dispositivos medianos */
-        @media (min-width: 481px) and (max-width: 768px) {
-            :root{--header-h:360px;}
-            header{height:var(--header-h);padding:16px 0;}
-            .logo-mini{margin-bottom:6px;padding:8px;}
-            .logo-mini img{height:54px;}
-            main{padding:0 20px;padding-top:calc(var(--header-h) + 15px);}
-            .content{min-height:calc(100vh - var(--header-h) - 15px);padding:15px 0 30px 0;}
-            .hero{padding:32px 20px 36px;margin:8px 0 15px 0;}
-            .hero h1{font-size:26px;}
-            .hero p{font-size:15px;}
-            .btn-whatsapp{height:74px;font-size:18px;width:65%;padding:22px 20px;}
-            .btn-whatsapp img{height:30px;width:30px;}
-            .pill-badge{font-size:12px;padding:7px 16px;}
-            .mini-note{font-size:13px;margin-top:12px;}
-        }
         
         @media (prefers-reduced-motion:reduce){
             .btn-whatsapp:after{animation:none}
@@ -519,7 +469,6 @@ footer{
         </div>
     </header>
     <main>
-   
 
         <!-- Sección Hero -->
         <section class="hero">
